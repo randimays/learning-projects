@@ -17,3 +17,5 @@ false == 'false' // false
 '' == '0' // false
 0 == '' // true
 0 == '0' // true - JS intelligently tries to figure out a way to convert both values so they are of the same type. 0 and '0' are both converted to a string, and then they are equal in value.
+
+// text
