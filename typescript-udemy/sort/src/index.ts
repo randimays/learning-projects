@@ -1,17 +1,25 @@
-import { Sorter } from "./Sorter";
 import { NumbersCollection } from "./NumbersCollection";
 import { CharactersCollection } from "./CharactersCollection";
+import { LinkedList } from "./LinkedList";
 
-// const numbersCollection = new NumbersCollection([10, 3, -5, 0, 42, -101]);
-// const numbersSorter = new Sorter(numbersCollection);
+const numbersCollection = new NumbersCollection([10, 3, -5, 0, 42, -101]);
 
-// numbersSorter.sort();
+numbersCollection.sort();
 
-// console.log(numbersCollection.data);
+console.log(numbersCollection.data);
 
 const charCollection = new CharactersCollection('parAdiSe');
-const charSorter = new Sorter(charCollection);
 
-charSorter.sort();
+charCollection.sort();
 
-console.log(charCollection.data);
+console.log('char collection: ', charCollection.data);
+
+const linkedList = new LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
+
+linkedList.sort();
+
+linkedList.print();

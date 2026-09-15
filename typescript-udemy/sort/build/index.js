@@ -1,13 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Sorter_1 = require("./Sorter");
+const NumbersCollection_1 = require("./NumbersCollection");
 const CharactersCollection_1 = require("./CharactersCollection");
-// const numbersCollection = new NumbersCollection([10, 3, -5, 0, 42, -101]);
-// const numbersSorter = new Sorter(numbersCollection);
-// numbersSorter.sort();
-// console.log(numbersCollection.data);
+const LinkedList_1 = require("./LinkedList");
+const numbersCollection = new NumbersCollection_1.NumbersCollection([10, 3, -5, 0, 42, -101]);
+numbersCollection.sort();
+console.log(numbersCollection.data);
 const charCollection = new CharactersCollection_1.CharactersCollection('parAdiSe');
-const charSorter = new Sorter_1.Sorter(charCollection);
-charSorter.sort();
-console.log(charCollection.data);
+charCollection.sort();
+console.log('char collection: ', charCollection.data);
+const linkedList = new LinkedList_1.LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
+linkedList.sort();
+linkedList.print();
 //# sourceMappingURL=index.js.map

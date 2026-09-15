@@ -1,4 +1,5 @@
-export declare class NumbersCollection {
+import { Sorter } from "./Sorter";
+export declare class NumbersCollection extends Sorter {
     data: number[];
     constructor(data: number[]);
     get length(): number;
