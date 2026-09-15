@@ -1,0 +1,1 @@
+{"version":3,"file":"NumbersCollection.d.ts","sourceRoot":"","sources":["../src/NumbersCollection.ts"],"names":[],"mappings":"AAAA,qBAAa,iBAAiB;IACT,IAAI,EAAE,MAAM,EAAE;gBAAd,IAAI,EAAE,MAAM,EAAE;IAEjC,IAAI,MAAM,IAAI,MAAM,CAEnB;IAED,OAAO,CAAC,UAAU;IAUlB,OAAO,CAAC,SAAS,EAAE,MAAM,GAAG,OAAO;IAOnC,IAAI,CAAC,SAAS,EAAE,MAAM,GAAG,IAAI;CAO9B"}
