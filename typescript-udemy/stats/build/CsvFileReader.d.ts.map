@@ -1,1 +1,1 @@
-{"version":3,"file":"CsvFileReader.d.ts","sourceRoot":"","sources":["../src/CsvFileReader.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,SAAS,EAAe,MAAM,SAAS,CAAC;AAEjD,qBAAa,aAAa;IAGL,QAAQ,EAAE,MAAM;IAFnC,IAAI,EAAE,SAAS,EAAE,CAAM;gBAEJ,QAAQ,EAAE,MAAM;IAEnC,IAAI,IAAI,IAAI;CA4Bb"}
+{"version":3,"file":"CsvFileReader.d.ts","sourceRoot":"","sources":["../src/CsvFileReader.ts"],"names":[],"mappings":"AAEA,qBAAa,aAAa;IAGL,QAAQ,EAAE,MAAM;IAFnC,IAAI,EAAE,MAAM,EAAE,EAAE,CAAM;gBAEH,QAAQ,EAAE,MAAM;IAEnC,IAAI,IAAI,IAAI;CAWb"}

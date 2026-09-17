@@ -1,0 +1,1 @@
+{"version":3,"file":"CsvFileReader.d.ts","sourceRoot":"","sources":["../../src/inheritance/CsvFileReader.ts"],"names":[],"mappings":"AAEA,8BAAsB,aAAa,CAAC,CAAC;IAGhB,QAAQ,EAAE,MAAM;IAFnC,IAAI,EAAE,CAAC,EAAE,CAAM;gBAEI,QAAQ,EAAE,MAAM;IAEnC,QAAQ,CAAC,MAAM,CAAC,GAAG,EAAE,MAAM,EAAE,GAAG,CAAC;IAEjC,IAAI,IAAI,IAAI;CAYb"}
