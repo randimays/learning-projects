@@ -1,0 +1,1 @@
+{"version":3,"file":"HtmlReport.d.ts","sourceRoot":"","sources":["../../src/reportTargets/HtmlReport.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,YAAY,EAAE,MAAM,UAAU,CAAC;AAExC,qBAAa,UAAW,YAAW,YAAY;IAC1B,QAAQ,EAAE,MAAM;gBAAhB,QAAQ,EAAE,MAAM;IAEnC,KAAK,CAAC,MAAM,EAAE,MAAM,GAAG,IAAI;CAU5B"}

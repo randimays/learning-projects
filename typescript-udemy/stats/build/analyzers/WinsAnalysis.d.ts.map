@@ -1,0 +1,1 @@
+{"version":3,"file":"WinsAnalysis.d.ts","sourceRoot":"","sources":["../../src/analyzers/WinsAnalysis.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,SAAS,EAAe,MAAM,UAAU,CAAC;AAE5D,qBAAa,YAAa,YAAW,QAAQ;IACxB,IAAI,EAAE,MAAM;gBAAZ,IAAI,EAAE,MAAM;IAE/B,GAAG,CAAC,OAAO,EAAE,SAAS,EAAE,GAAG,MAAM;CAiBlC"}

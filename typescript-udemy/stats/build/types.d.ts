@@ -12,4 +12,10 @@ export type MatchData = [
     MatchResult,
     string
 ];
+export interface Analyzer {
+    run(matches: MatchData[]): string;
+}
+export interface OutputTarget {
+    print(report: string): void;
+}
 //# sourceMappingURL=types.d.ts.map
