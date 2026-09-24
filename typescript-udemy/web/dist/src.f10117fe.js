@@ -117,11 +117,48 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/index.ts":[function(require,module,exports) {
+})({"src/models/User.ts":[function(require,module,exports) {
 "use strict";
 
-console.log('hi there');
-},{}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.User = void 0;
+class User {
+  data;
+  events = {};
+  constructor(data) {
+    this.data = data;
+  }
+  get(propName) {
+    return this.data[propName];
+  }
+  set(update) {
+    Object.assign(this.data, update);
+  }
+  on(eventName, callback) {}
+}
+exports.User = User;
+},{}],"src/index.ts":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+const User_1 = require("./models/User");
+const user = new User_1.User({
+  name: 'Billy',
+  age: 20
+});
+console.log(user.get('name'));
+console.log(user.get('age'));
+user.set({
+  name: 'Amanda',
+  age: 21
+});
+console.log(user.get('name'));
+console.log(user.get('age'));
+},{"./models/User":"src/models/User.ts"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
