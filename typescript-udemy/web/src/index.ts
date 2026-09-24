@@ -5,13 +5,16 @@ const user = new User({
   age: 20
 });
 
-console.log(user.get('name'));
-console.log(user.get('age'));
-
-user.set({
-  name: 'Amanda',
-  age: 21
+user.on('click', () => {
+  console.log('hey');
 });
 
-console.log(user.get('name'));
-console.log(user.get('age'));
+user.on('click', () => {
+  console.log('you');
+});
+
+user.on('click', () => {
+  console.log('guys');
+});
+
+user.trigger('click');

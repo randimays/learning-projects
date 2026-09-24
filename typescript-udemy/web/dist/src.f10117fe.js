@@ -136,7 +136,17 @@ class User {
   set(update) {
     Object.assign(this.data, update);
   }
-  on(eventName, callback) {}
+  on(eventName, callback) {
+    const handlers = this.events[eventName] || [];
+    this.events[eventName] = [...handlers, callback];
+  }
+  trigger(eventName) {
+    const handlers = this.events[eventName];
+    if (!handlers || handlers.length === 0) {
+      return;
+    }
+    handlers.forEach(callback => callback());
+  }
 }
 exports.User = User;
 },{}],"src/index.ts":[function(require,module,exports) {
@@ -150,14 +160,16 @@ const user = new User_1.User({
   name: 'Billy',
   age: 20
 });
-console.log(user.get('name'));
-console.log(user.get('age'));
-user.set({
-  name: 'Amanda',
-  age: 21
+user.on('click', () => {
+  console.log('hey');
 });
-console.log(user.get('name'));
-console.log(user.get('age'));
+user.on('click', () => {
+  console.log('you');
+});
+user.on('click', () => {
+  console.log('guys');
+});
+user.trigger('click');
 },{"./models/User":"src/models/User.ts"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -183,7 +195,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60538" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62971" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
